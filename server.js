@@ -103,6 +103,7 @@ app.post("/api/laptops", authenticate, async (req, res) => {
 
 app.get("/api/laptops", authenticate, async (req, res) => {
   try {
+    console.log(req);
     const laptops = await Laptop.find();
     res.json(laptops);
   } catch (err) {
