@@ -1,0 +1,1 @@
+npm install mongoose mongodb express body-parser cors
